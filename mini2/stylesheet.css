@@ -1,0 +1,84 @@
+/* Styling. */
+
+body {
+    background-color: yellow;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 22px;
+}
+
+.banner {
+    font-family: sans-serif;
+    background-color: cornflowerblue;
+    padding: 5px;
+    animation: banner 3s ease-in-out 1s infinite alternate;
+}
+
+h2 {
+    color: blue;
+    text-align: right;
+}
+
+h3 {
+    text-align: right;
+    color: red;
+}
+
+table {
+    background-color: cyan;
+    animation: tableBackgroundAnimation, tableFontAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.first-column {
+    text-align: center;
+}
+
+.first-letter {
+    font-size: 48px;
+}
+
+.red-text {
+    color: red;
+}
+
+.end-exercise {
+    font-size: 48px;
+}
+
+/* Animations. */
+
+@keyframes tableBackgroundAnimation {
+    from {
+        background-color: cyan;
+    }
+
+    to {
+        background-color: green;
+    }
+}
+
+@keyframes tableFontAnimation {
+    from {
+        color: black;
+    }
+
+    to {
+        color: white;
+    }
+}
+
+@keyframes banner {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 90%;
+    }
+}
