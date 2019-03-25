@@ -13,6 +13,7 @@
 
 .button {
     text-align: center;
+    text-decoration: none;
     background-color: #990000; 
     color: white;
     border: none;
