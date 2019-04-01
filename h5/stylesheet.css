@@ -23,9 +23,9 @@ body {
     border: none;
     font-size: 15px;
     border-radius: 10px;
-    width: 100px;
-    height: 18px; 
-    padding: 15px 32px;
+    width: 160px;
+    height: 45px; 
+    line-height: 45px;
     border-style: solid;
     display: inline-block;
     font-size: 16px;
