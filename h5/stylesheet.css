@@ -15,17 +15,22 @@ body {
     text-align: center;
 }
 
-#nav button {
+.button {
     text-align: center;
+    text-decoration: none;
     background-color: #990000; 
     color: white;
-    font-size: 1em;
+    border: none;
+    font-size: 15px;
     border-radius: 10px;
-    width: 160px;
-    height: 50px; 
-    padding-top: 0px;
-    padding-bottom: 0px;
+    width: 100px;
+    height: 18px; 
+    padding: 15px 32px;
     border-style: solid;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 h1 {
