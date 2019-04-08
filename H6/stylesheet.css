@@ -1,0 +1,33 @@
+body {
+    background-color: cyan;
+    color: blue;
+  }
+
+
+
+
+h1 {
+
+    text-align:center; 
+    height: 120px;
+   
+    background-image: url("ball.png");
+    background-position: left 2px top 0px, left 20px bottom 20px;
+    background-repeat: no-repeat;
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: red;      
+}
+a:hover{
+    background: yellow;
+}
+a{text-decoration:none}
+ 
+ul {
+    list-style-image: url("ballsmall.png");
+  }
+:root { }
+
