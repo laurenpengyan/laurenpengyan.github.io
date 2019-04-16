@@ -1,0 +1,133 @@
+body {
+    background-color: white;
+    color: darkgray;
+    background-image: url("img/background.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* added shadow */
+#wrapper {
+    width: 80%;
+    min-width: 960px;
+    background-color: #90C7E3;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+    height: 480px;
+}
+
+#nav {
+    padding-top: 0px;
+    float: left;
+    width: 15%;
+    background: skyblue;
+    height: auto;
+}
+
+#nav ul {
+    padding-left: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    list-style-type: none;
+}
+
+#nav ul a:link {
+    text-decoration: none;
+    color: #000033;
+}
+
+#nav ul a:visited {
+    color: #344873;
+}
+
+#nav ul a:hover {
+    color: white;
+}
+
+#content {
+    margin-left: 15%;
+}
+
+/* unordered list without bullet */
+#content ul {
+    list-style-position: inside;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background: #000033;
+    background-image: url('img/sunset.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    line-height: 72px;
+    height: 72px;
+}
+
+h2 {
+    color: #3399CC;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px rgb(97, 98, 99);
+    margin-top: 30px;
+}
+
+h3 {
+    color: #000033;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    float: left;
+    margin-right: 25px;
+}
+
+.resort {
+    color: #000033;
+    font-weight: bold;
+}
+
+
+
+#address-size {
+    font-size: 0.9rem;
+}
+
+#footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.75rem;
+    
+}
+#footer1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.75rem;
+    position: fixed;
+   left: 320;
+   bottom: 250;
+   width: 100%;
+  color: darkgray;
+   text-align: left;
+    
+}
+
+#birdbanner {
+    padding: 5px;
+    animation: birdbanner 3s ease-in-out 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+
+}
+
+@keyframes birdbanner {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 90%;
+    }
+}
