@@ -27,7 +27,7 @@ body {
 } 
 
 
-#leftcolumn ul {
+#leftcolumn a {
     padding-left: 0;
     font-size: 1.2em;
     font-weight: bold;
@@ -35,16 +35,16 @@ body {
     list-style-type: none;
 }
 
-#leftcolumn ul a:link {
+#leftcolumn  a:link {
     text-decoration: none;
     color: #000033;
 }
 
-#leftcolumn ul a:visited {
+#leftcolumn  a:visited {
     color: #344873;
 }
 
-#leftcolumn ul a:hover {
+#leftcolumn  a:hover {
     color: white;
 }
 
