@@ -97,8 +97,6 @@ h3 {
     font-weight: bold;
 }
 
-
-
 #address-size {
     font-size: 0.9rem;
 }
@@ -211,12 +209,10 @@ input, textarea {
 
 
 #birdbanner {
-    padding: 10px;
+    padding: 5px;
     animation: birdbanner 3s ease-in-out 1s;
     animation-fill-mode: forwards;
     position: relative;
-  
-
 }
 
 @keyframes birdbanner {
@@ -229,15 +225,14 @@ input, textarea {
     }
 }
 
+img#birdbanner_img {
+    float: none;
+}
+
 #footer1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 0.75rem;
-    position:fixed;
-   left: 320;
-    height:600px;
-   width: 100%;
- 
- 
-    
+    left: 320;
+    width: 100%;
 }
