@@ -1,6 +1,6 @@
 body {
-    background-color: white;
-    color: darkgray;
+    background-color:white;
+    color: #a9a9a9;
     background-image: url("img/background.jpg");
     font-family: Arial, Helvetica, sans-serif;
     
@@ -14,17 +14,20 @@ body {
     box-shadow: 10px 10px 5px grey;
     margin: auto;
     height: 480px;
+
+    
 }
 
-#nav {
-    padding-top: 0px;
-    float: left;
-    width: 15%;
-    background: skyblue;
-    height: auto;
-}
+#leftcolumn { float: left;
+    width: 100px;}
 
-#nav ul {
+#rightcolumn { margin-left: 155px;
+        background-color:#90C7E3;
+        color:darkgray;
+} 
+
+
+#leftcolumn ul {
     padding-left: 0;
     font-size: 1.2em;
     font-weight: bold;
@@ -32,25 +35,22 @@ body {
     list-style-type: none;
 }
 
-#nav ul a:link {
+#leftcolumn ul a:link {
     text-decoration: none;
     color: #000033;
 }
 
-#nav ul a:visited {
+#leftcolumn ul a:visited {
     color: #344873;
 }
 
-#nav ul a:hover {
+#leftcolumn ul a:hover {
     color: white;
 }
 
-#content {
-    margin-left: 15%;
-}
 
 /* unordered list without bullet */
-#content ul {
+.ul {
     list-style-position: inside;
 }
 
@@ -107,10 +107,10 @@ img {
     font-size: 0.75rem;
     position: fixed;
    left: 320;
-   bottom: 250;
+    height:2000px;
    width: 100%;
-  color: darkgray;
-   text-align: left;
+  padding-bottom: 600px;
+ 
     
 }
 
@@ -119,6 +119,7 @@ img {
     animation: birdbanner 3s ease-in-out 1s;
     animation-fill-mode: forwards;
     position: relative;
+  
 
 }
 

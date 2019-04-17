@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Reservations at Pacific Trails</title>
+    <title>Pacific Trails Resort</title>
+
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="pacific.css">
 </head>
@@ -10,57 +11,61 @@
 <body>
         <div id="wrapper">
                 <h1>Pacific Trails Resort</h1>
-                <div id="nav">
-                    <ul class="ul">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="yurts.html">Yurts</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
-        </ul>
-                    </div>
-    <form method="get" action="contact.php">
-            <div id="content">
-        <table>
+        
+                <div id="leftcolumn">
+                    <ul id="ul">
+                        <a href="index1.html">Home</a>
+                        <a href="yurts.html">Yurts</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="reservations.html">Reservations</a>
+                    </ul>
+                </div>
+        <div id="rightcolumn">
+            <div class="content">
 
-            <tr>
-                <td>First Name :</td>
-                <td> <input type="text" name="fname"></td>
-            </tr>
+                <form method="get" action="contact.php">
+                    <div id="content">
+                        <table>
 
-            <tr>
-                <td>Last Name :</td>
-                <td> <input type="text" name="lname"></td>
-            </tr>
-            <tr>
-                <td>Email Address :</td>
-                <td><input type="mail" name="email"></td>
-            </tr>
-            <tr>
-                <td>Phone Number:</td>
-                <td><input type="tel" name="phone"></td>
-            </tr>
+                            <tr>
+                                <td>First Name :</td>
+                                <td> <input type="text" name="fname"></td>
+                            </tr>
 
-            <tr>
-                <td>Number of Guests :</td>
-                <td><input type="number" name="numofguest"></td>
-            </tr>
-            <tr>
-                <td>Message :</td>
-                <td><input type="text" name="messages"></td>
-            </tr>
+                            <tr>
+                                <td>Last Name :</td>
+                                <td> <input type="text" name="lname"></td>
+                            </tr>
+                            <tr>
+                                <td>Email Address :</td>
+                                <td><input type="mail" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number:</td>
+                                <td><input type="tel" name="phone"></td>
+                            </tr>
 
-        </table><br>
+                            <tr>
+                                <td>Number of Guests :</td>
+                                <td><input type="number" name="numofguest"></td>
+                            </tr>
+                            <tr>
+                                <td>Message :</td>
+                                <td><input type="text" name="messages"></td>
+                            </tr>
 
-        <input type="submit"><input type="reset">
-        </form>
-         
-    
-        <div id="footer">
-            <p>Copyright &copy; 2011 Pacific Trails Resort<br>
-                <em>webmaster name</em></p>
+                        </table><br>
+
+                        <input type="submit"><input type="reset">
+                </form>
+
+
+                <div id="footer">
+                    <p>Copyright &copy; 2011 Pacific Trails Resort<br>
+                        <em>webmaster name</em></p>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
 </body>
 
 </html>
