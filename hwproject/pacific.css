@@ -17,7 +17,11 @@ body {
 
     
 }
-
+#nav{
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+}
 #leftcolumn { float: left;
     width: 100px;}
 
@@ -50,7 +54,7 @@ body {
 
 
 /* unordered list without bullet */
-.ul {
+#ul {
     list-style-position: inside;
 }
 
@@ -71,7 +75,7 @@ h2 {
     color: #3399CC;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 2px 2px rgb(97, 98, 99);
-    margin-top: 30px;
+    
 }
 
 h3 {
