@@ -13,50 +13,54 @@ body {
     background-color: #90C7E3;
     box-shadow: 10px 10px 5px grey;
     margin: auto;
-    height: 480px;
+   
 
     
 }
-#nav{
-    background-color: skyblue;
-    margin: 0;
-    padding: 0;
-}
-#leftcolumn { float: left;
-    width: 100px;}
-
-#rightcolumn { margin-left: 155px;
-        background-color:#90C7E3;
-        color:darkgray;
-} 
-
-
-#leftcolumn a {
-    padding-left: 0;
-    font-size: 1.2em;
+#nav {
+    color: skyblue;
+   
     font-weight: bold;
-    margin: 0;
-    list-style-type: none;
+    float: left;
+    width: 100px;
+    }
+
+
+#nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        font-size: 1.2em;
+        }
+
+
+#nav a {
+    
+    text-decoration: none;
 }
 
-#leftcolumn  a:link {
-    text-decoration: none;
+#nav a:link {
+    
     color: #000033;
 }
 
-#leftcolumn  a:visited {
+#nav  a:visited {
     color: #344873;
 }
 
-#leftcolumn  a:hover {
+#nav  a:hover {
     color: white;
 }
-
+#content {
+   
+    background-color:#90c7e3;
+    margin-left: 155px;
+    }
 
 /* unordered list without bullet */
-#ul {
+#content ul {
     list-style-position: inside;
-}
+    } 
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -74,7 +78,7 @@ h1 {
 h2 {
     color: #3399CC;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px rgb(97, 98, 99);
+    text-shadow: 1px 1px rgb(97, 98, 99);
     
 }
 
@@ -83,7 +87,7 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-img {
+#content img {
     float: left;
     margin-right: 25px;
 }
@@ -105,21 +109,109 @@ img {
     font-size: 0.75rem;
     
 }
-#footer1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 0.75rem;
-    position: fixed;
-   left: 320;
-    height:2000px;
-   width: 100%;
-  padding-bottom: 600px;
- 
-    
+
+table{
+    width: 75%;
+    margin: auto;
+    border: 1px solid #3399cc;
 }
 
+td,th{
+    padding:5px;
+    border:1px solid #3399cc;
+}
+
+td{
+    text-align: center;
+}
+
+.text{
+    text-emphasis: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #f5fafc;
+    }
+    
+label {
+    float: left;
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    }
+    
+input, textarea {
+    margin-top: 10px;
+    }
+    
+#submitreset {
+    width: 100%;
+    height:100%;
+    padding-bottom: 10px;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        body {
+            margin: 0px;
+        }
+        #wrapper {
+            width: auto;
+            min-width: 0px;
+            margin: 0px;
+        }
+        h1 {
+            margin: 0px;
+            background-image: url('img/sunset.jpg');
+        }
+        #content {
+            padding: .1em 1em;
+            margin: 0px;
+            font-size: 90%;
+        }
+        nav ul {
+            padding: 0px;
+        }
+        nav li {
+            display: inline-block;
+            width: 5em;
+            font-size: 120%;
+            text-align: center;
+            box-shadow: 0px 0px 2px #330000;
+            background-color: #F5F5DC;
+            margin: 1%;
+            padding: 2.5%;
+        }
+        nav a {
+            display: block;
+        }
+        #content img {
+            float: none;
+            padding: 0px;
+            margin: .1em;
+        }
+        section {
+            padding: 0px;
+        }
+        section img {
+            display: none;
+        }
+        #mobile {
+            display: none;
+        }
+        #desktop {
+            display: inline;
+        }
+        label {
+            float: none;
+            text-align: left;
+        }
+       
+    }
+
+
 #birdbanner {
-    padding: 5px;
+    padding: 10px;
     animation: birdbanner 3s ease-in-out 1s;
     animation-fill-mode: forwards;
     position: relative;
@@ -135,4 +227,17 @@ img {
     to {
         margin-left: 90%;
     }
+}
+
+#footer1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 0.75rem;
+    position:fixed;
+   left: 320;
+    height:600px;
+   width: 100%;
+ 
+ 
+    
 }
