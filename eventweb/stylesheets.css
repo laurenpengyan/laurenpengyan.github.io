@@ -10,6 +10,7 @@ body {
     background-color: rgba(235, 233, 223, 0.749);
     padding: 10px 10px 0;
     height: 775px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 
@@ -17,17 +18,23 @@ body {
 h1 {
     text-align: center;
     color: #1a191c;
+    background-color: antiquewhite;
+    text-shadow: 1px 1px rgb(97, 98, 99);
 }
 
-h2{
-    text-align: justify;
-    color: #1a191c;
-}
-
-
-h5{
+h2 {
     text-align: center;
     color: #1a191c;
+    text-shadow: 1px 1px rgb(97, 98, 99);
+   
+}
+
+
+
+h5 {
+    text-align: center;
+    color: #1a191c;
+
 }
 
 img {
@@ -61,7 +68,7 @@ img {
 }
 
 #footer p {
-    line-height: 38px;
+    line-height: 50px;
 }
 
 a:hover {
