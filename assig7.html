@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 7</title>
+    <meta charset="utf-8">
+    <meta name="description" content="working with forms from float CSS to grid">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            padding: 1em;
+            background: #f9f9f9;
+            border: 1px solid black;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+        }
+
+        form input {
+            margin-bottom: 1rem;
+            background: white;
+            border: 1px solid #9c9c9c;
+        }
+
+        label {
+            text-align: right;
+            display: block;
+            padding: 0.5em 1.5em 0.5em 0;
+        }
+
+        .myinput {
+            width: 100%;
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+        }
+
+        .age-input {
+            width: 51.5em;
+        }
+
+        .date-input {
+            width: 51.5em;
+        }
+
+      
+
+        input:focus {
+            background-color: gold;
+        }
+
+        form div {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background: lightgray;
+            padding: 0.7em;
+            
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            color: gold;
+        }
+
+        .select {
+            position: relative;
+            width: 51.5em;
+            display: flex;
+            overflow: hidden;
+        }
+
+        select {
+            flex: 1;
+            padding: 0 .5em;
+            color: black;
+            
+        
+        }
+
+        .select::after {
+            content: '\25BC';
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 1em;
+            background: white;
+
+            
+            -webkit-transition: .25s all ease;
+            -o-transition: .25s all ease;
+            transition: .25s all ease;
+        }
+
+        .select:hover::after {
+            color: black;
+        }
+
+        .submit {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignment 7 - working with forms</h1>
+    <form class="form1" action="#" method="post">
+        <label for="FirstName">First Name</label>
+        <input type="text" name="FirstName" required id="FirstName" maxlength="15" size="93">
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" maxlength="25" size="93" id="LastName">
+        <label for="Age">Age</label>
+        <input type="number" class="age-input" name="Age" min="18" max="65" id="Age">
+        <label for="Email">Email</label>
+        <input type="text" name="email" id="Email" required size="93">
+        <label for="DateofyourMembership">Date of your Membership</label>
+        <input type="date" class="date-input" name="memberdate" id="date" max="2018-12-31">
+        <label for="reward">choose your reward</label>
+
+        <select name="select" class="select">
+            <option selected disabled></option>
+            <option>Two-year Member Magazine subscription</option>
+            <option>2 Tickets to Annual Seminar"</option>
+            <option>Voucher $100 food during seminar</option>
+            <option>1-day hotel stay for seminar</option>
+        </select>
+
+        <div class="submit"><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Clear"></div>
+    </form>
+</body>
+
+</html>
