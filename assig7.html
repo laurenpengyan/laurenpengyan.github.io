@@ -9,7 +9,6 @@
         * {
             box-sizing: border-box;
         }
-
         form {
             padding: 1em;
             background: #f9f9f9;
@@ -20,63 +19,51 @@
             margin-right: auto;
             padding: 1em;
         }
-
         form input {
             margin-bottom: 1rem;
             background: white;
             border: 1px solid #9c9c9c;
         }
-
         label {
             text-align: right;
             display: block;
             padding: 0.5em 1.5em 0.5em 0;
         }
-
         .myinput {
             width: 100%;
             padding: 0.7em;
             margin-bottom: 0.5rem;
         }
-
         .age-input {
             width: 51.5em;
         }
-
         .date-input {
             width: 51.5em;
         }
-
       
-
         input:focus {
             background-color: gold;
         }
-
         form div {
             text-align: center;
         }
-
         input[type="submit"],
         input[type="reset"] {
             background: lightgray;
             padding: 0.7em;
             
         }
-
         h1 {
             text-align: center;
             font-style: italic;
             color: gold;
         }
-
         .select {
             position: relative;
             width: 51.5em;
             display: flex;
             overflow: hidden;
         }
-
         select {
             flex: 1;
             padding: 0 .5em;
@@ -84,7 +71,9 @@
             
         
         }
-
+        .select:focus{
+            background-color: gold;
+        }
         .select::after {
             content: '\25BC';
             position: absolute;
@@ -92,17 +81,14 @@
             right: 0;
             padding: 0 1em;
             background: white;
-
             
             -webkit-transition: .25s all ease;
             -o-transition: .25s all ease;
             transition: .25s all ease;
         }
-
-        .select:hover::after {
+        /* .select:hover::after {
             color: black;
-        }
-
+        } */
         .submit {
             padding: 10px;
         }
