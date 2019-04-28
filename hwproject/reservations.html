@@ -12,67 +12,74 @@
 <body>
     <div id="wrapper">
         <h1>Pacific Trails Resort</h1>
-        <div id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="yurts.html">Yurts</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                
-            </ul>
-        </div>
+        <div class="flex-container">
+            <div class="flex-row">
+                <div class="flex-column">
+                    <div id="nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="yurts.html">Yurts</a></li>
+                            <li><a href="activities.html">Activities</a></li>
+                            <li><a href="reservations.html">Reservations</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <h2>Reservations at Pacific Trails</h2>
+                    <form name="Myform" id="Myform" action="contact.php" method="get">
 
 
-        <div id="content">
-                <h2>Reservations at Pacific Trails</h2>
-            <form method="post" action="contact.php">
+                        <div>
+                            <label for="FirstName">First Name:</label>
+                            <input type="text" name="FirstName" id="FirstName">
+                        </div>
+                        <!--end of first name field-->
+                        <div>
+                            <label for="LastName">Last Name:</label>
+                            <input type="text" name="LastName" id="LastName">
+                        </div>
+                        <!--end of last name field-->
+                        <div>
+                            <label for="Email">E-mail:</label>
+                            <input type="email" name="email" id="Email" size="40">
+                        </div>
+                        <!--end of email field-->
+                        <div>
+                            <label for="PhoneNumber">Phone Number:</label>
+                            <input type="tel" name="TelephoneNumber" id="PhoneNumber" maxlength="12">
+                        </div>
+                        <!--end of phone number field-->
+                        <div>
+                            <label for="NumberOfGuest">NumberOfGuest:</label>
+                            <input type="number" name="NumberOfGuest" id="NumberOfGuest">
 
-                    
-           <div>
-               <label for="FirstName">First Name:</label>
-               <input type="text" name="FirstName" id="FirstName">
-           </div> <!--end of first name field-->
-           <div>
-               <label for="LastName">Last Name:</label>
-               <input type="text" name="LastName" id="LastName">
-           </div> <!--end of last name field-->
-           <div>
-               <label for="Email">E-mail:</label>
-               <input type="text" name="email" id="Email"
-                                               size="40">
-           </div> <!--end of email field-->
-           <div>
-               <label for="PhoneNumber">Phone Number:</label>
-               <input type="text" name="TelephoneNumber"
-                      id="PhoneNumber" maxlength="12">
-           </div> <!--end of phone number field-->
-           <div>
-                <label for="NumberOfGuest">NumberOfGuest:</label>
-                <input type="number" name= "NumberOfGuest" id="NumberOfGuest">
-                         
-            </div><!--end of number of guest field-->
-           <div>
-               <label for="messages">Messages Here:</label>
-               <textarea name="messages" id="messages"
-                        rows="4" cols="60"></textarea>
-           </div><!--end of messages field-->
-           <div id="submitreset" >
-               <input type="submit" value="Submit" ><input type="reset" value="Reset">
-           </div> 
-           
-               
-           
-           </form>
-           <br>
+                        </div>
+                        <!--end of number of guest field-->
+                        <div>
+                            <label for="messages">Messages Here:</label>
+                            <textarea name="messages" id="messages" rows="4" cols="60"></textarea>
+                        </div>
+                        <!--end of messages field-->
+                        <div id="submitreset">
+                            <input type="submit" value="Submit"><input type="reset" value="Reset">
+                        </div>
 
 
-            <div id="footer">
-                Copyright &copy; 2011 Pacific Trails Resort<br>
-                    <em>webmaster name</em>
+
+                    </form>
+                    <br>
+
+
+                    <div id="footer">
+                        Copyright &copy; 2011 Pacific Trails Resort<br>
+                        <em>webmaster name</em>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
 </body>
 
 </html>
