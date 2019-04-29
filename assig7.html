@@ -22,7 +22,7 @@
             padding: 1em;
         }
 
-        form input, form select {
+        form input {
             margin-bottom: 1rem;
             background: white;
             border: 1px solid #9c9c9c;
@@ -38,14 +38,6 @@
             width: 100%;
             padding: 0.7em;
             margin-bottom: 0.5rem;
-        }
-
-        .age-input {
-            width: 100%;
-        }
-
-        .date-input {
-            width: 100%;
         }
 
         input:focus {
@@ -70,7 +62,8 @@
         }
 
         .selectdiv {
-            position: relative;            
+            position: relative;  
+                    
         }
 
         .selectdiv:after {
@@ -108,7 +101,11 @@
 
             -webkit-border-radius: 0px;
             -moz-border-radius: 0px;
-            border-radius: 0px;        
+            border-radius: 0px;   
+
+             width: 100%;
+            padding: 0.7em;
+            margin-bottom: 0.5rem;      
         }
 
         .selectdiv select:focus {
@@ -121,19 +118,19 @@
     <h1>Assignment 7 - working with forms</h1>
     <form class="form1" action="#" method="post">
         <label for="firstname">First Name</label>
-        <input type="text" name="firstname" required id="firstname" maxlength="15" size="93">
+        <input type="text" name="firstname" required id="firstname" maxlength="15" class="myinput">
 
         <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" maxlength="25" size="93">
+        <input type="text" name="lastname" id="lastname" maxlength="25" class="myinput">
 
         <label for="age">Age</label>
-        <input type="number" class="age-input" name="age" id="age" min="18" max="65" size="93">
+        <input type="number"  name="age" id="age" min="18" max="65" class="myinput">
 
         <label for="email">Email</label>
-        <input type="text" name="email" id="email" required size="93">
+        <input type="text" name="email" id="email" required class="myinput">
 
         <label for="memberdate">Date of your Membership</label>
-        <input type="date" class="date-input" name="memberdate" id="memberdate" max="2018-12-31">
+        <input type="date"  name="memberdate" id="memberdate" max="2018-12-31" class="myinput">
 
         <label for="reward">Choose your reward</label>
         <div class="selectdiv">
