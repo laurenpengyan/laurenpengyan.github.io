@@ -28,46 +28,33 @@
 
                 <div id="content">
                     <h2>Reservations at Pacific Trails</h2>
-                    <form name="Myform" id="Myform" action="contact.php" method="get">
+                    <form class="form" action="#" method="post">
 
 
-                        <div>
+                        
                             <label for="FirstName">First Name:</label>
-                            <input type="text" name="FirstName" id="FirstName">
-                        </div>
-                        <!--end of first name field-->
-                        <div>
+                            <input type="text" name="FirstName" id="FirstName" required class="myinput">
+                        
+                      
                             <label for="LastName">Last Name:</label>
-                            <input type="text" name="LastName" id="LastName">
-                        </div>
-                        <!--end of last name field-->
-                        <div>
+                            <input type="text" name="LastName" id="LastName" class="myinput">
+                        
                             <label for="Email">E-mail:</label>
-                            <input type="email" name="email" id="Email" size="40">
-                        </div>
-                        <!--end of email field-->
-                        <div>
+                            <input type="email" name="email" id="Email" size="40" class="myinput">
+                        
                             <label for="PhoneNumber">Phone Number:</label>
-                            <input type="tel" name="TelephoneNumber" id="PhoneNumber" maxlength="12">
-                        </div>
-                        <!--end of phone number field-->
-                        <div>
+                            <input type="tel" name="TelephoneNumber" id="PhoneNumber" maxlength="12" class="myinput">
+                        
                             <label for="NumberOfGuest">NumberOfGuest:</label>
-                            <input type="number" name="NumberOfGuest" id="NumberOfGuest">
+                            <input type="number" name="NumberOfGuest" id="NumberOfGuest" class="myinput">
 
-                        </div>
-                        <!--end of number of guest field-->
-                        <div>
+                       
                             <label for="messages">Messages Here:</label>
-                            <textarea name="messages" id="messages" rows="4" cols="60"></textarea>
-                        </div>
-                        <!--end of messages field-->
+                            <textarea name="messages" id="messages" rows="4" cols="60" class="myinput"></textarea>
+                      
                         <div id="submitreset">
-                            <input type="submit" value="Submit"><input type="reset" value="Reset">
+                            <input type="submit" value="Submit"> &nbsp;<input type="reset" value="Reset">
                         </div>
-
-
-
                     </form>
                     <br>
 

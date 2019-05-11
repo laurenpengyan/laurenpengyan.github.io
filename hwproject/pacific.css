@@ -112,32 +112,6 @@ h3 {
     
 }
 
-table{
-    width: 75%;
-    margin: auto;
-    border: 1px solid #3399cc;
-}
-
-td,th{
-    padding:5px;
-    border:1px solid #3399cc;
-}
-
-td{
-    text-align: center;
-}
-
-tr:nth-of-type(odd) {
-    background-color: #f5fafc;
-    }
-    
-label {
-    float: left;
-    width: 120px;
-    text-align: right;
-    padding-right: 10px;
-    margin-top: 10px;
-    }
     
 input, textarea {
     margin-top: 10px;
@@ -187,3 +161,32 @@ img#birdbanner_img {
     flex-direction: column;
 }
 
+form {
+    padding: 5em;
+    background:lightcyan;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+form input  {
+    margin-bottom: 1rem;
+    background:lightblue;
+    border: 1px solid #9c9c9c;
+}
+
+
+
+label {
+    text-align: left;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0;
+}
+
+.myinput {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
