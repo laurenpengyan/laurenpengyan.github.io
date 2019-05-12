@@ -113,7 +113,7 @@ h3 {
 }
 
     
-input, textarea {
+textarea {
     margin-top: 10px;
     }
     
@@ -162,9 +162,9 @@ img#birdbanner_img {
 }
 
 form {
-    padding: 5em;
+    padding: 1em;
     background:lightcyan;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -186,7 +186,7 @@ label {
 }
 
 .myinput {
-    width: 100%;
+    width: 95%;
     padding: 0.7em;
     margin-bottom: 0.5rem;
 }
