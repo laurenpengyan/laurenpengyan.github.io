@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DHTML Lab</title>
+</head>
+
+<body>
+
+
+    <div style="font-size:50px; position: absolute;" id="timer"></div>
+
+    <script>
+        refreshTimer();
+
+        var myVar = setInterval(myTimer, 1000);
+
+        function refreshTimer() {
+            var d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+
+        function myTimer() {
+            var elem = document.getElementById("timer");
+
+            refreshTimer();
+
+            // https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+            var left = Math.floor(Math.random() * w);
+            var top = Math.floor(Math.random() * h);
+
+            elem.style.left = left + 'px';
+            elem.style.top = top + 'px';
+        }
+    </script>
+    <li><a href="index.html">Back</a></li>
+</body>
+
+</html>

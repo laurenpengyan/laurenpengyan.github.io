@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LabList</title>
+</head>
+
+<body>
+    <h1><img src="images/yanpenglogo1.gif" alt="yanpeng logo" height="95" width="700">
+        <p align="left">CNIT 133 Interactive Web Pages Using JavaScript</p>
+        </left>
+    </h1>
+    <p>Name: Yan Peng </p>
+    <p>URL: http://japangate.us/lab</p>
+    <p>&nbsp;</p>
+    <li><a href="https://japangate.us">Back To Homepage</a></li>
+
+    <p>LABLIST:</p>
+
+
+    <table width="967" border="2">
+        <tbody>
+            <tr>
+                <td width="479" height="66">LAB 1 <a href="topicselection.html"> Topic Selection</a></td>
+                <td width="470">LAB 2 <a href="helloworldscript.html">Hello World script</a></td>
+            </tr>
+            <tr>
+                <td height="66">LAB 3 <a href="buttonfunctions.html">Button and Functions</a></td>
+                <td>LAB 4 <a href="bingocards.html">Basic Bingo</a></td>
+            </tr>
+            <tr>
+                <td height="66">LAB 5 <a href="cyclingbanners.html">Cycling Banners</a></td>
+                <td>LAB 6 <a href="popup.html">Pop Up Windows</a></td>
+            </tr>
+            <tr>
+                <td height="66">LAB 7 <a href="formvalidation.html">Form Validation</a></td>
+                <td>LAB 8</td>
+            </tr>
+            <tr>
+                <td height="66">LAB 9 <a href="formvalidation.html">Regular Expression</a></td>
+                <td>LAB 10 <a href="mouseevent.html">Event Handler</a> </td>
+            </tr>
+            <tr>
+                <td height="66">LAB 11 <a href="cookies.html">Cookies</a></td>
+                <td>LAB 12 <a href="dhtml.html">DHTML</a></td>
+            </tr>
+            <tr>
+                <td height="66">LAB 13 <a href="game.html">The Final Project</a></td>
+                <td>LAB 14 </td>
+            </tr>
+            <tr>
+                <td height="66">LAB </td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="font-size:50px;" id="timer"></p>
+
+    <script>
+        var myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+            var d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+    
+    
+</body>
+
+</html>
